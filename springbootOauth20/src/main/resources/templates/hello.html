@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<!--  
+create by changfubai on 2018/3/16 
+-->
+<head>
+    <meta charset="UTF-8"/>
+    <title>mypage</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+</head>
+<body>
+
+<table width="50%" style="table-layout:fixed;word-break:break-all;" class="table table-dark">
+    <thead >
+            <th colspan="3" style="text-align: center">It's my authorization</th>
+        </tr>
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">name</th>
+            <th scope="col">content</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr th:each="info ,infoStat : ${name}"   class="text-center">
+            <td th:text="${infoStat.index}"></td>
+            <td th:text="${name[infoStat.index]}"></td>
+            <td th:text="${content[infoStat.index]}"></td>
+        </tr>
+    <tr>
+    </tbody>
+</table>
+</body>
+</html>
