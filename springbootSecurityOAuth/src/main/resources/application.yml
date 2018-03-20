@@ -1,0 +1,46 @@
+
+server:
+  port: 8080
+
+logging:
+  level:
+    root: INFO
+    org.springframework.web: INFO
+    org.springframework.security: INFO
+#    org.springframework.boot.autoconfigure: DEBUG
+
+spring:
+#  datasource:
+#    driver-class-name: com.mysql.jdbc.Driver
+#    username: root
+#    password: root
+#    url: jdbc:mysql://localhost:3306/test
+
+  thymeleaf:
+    cache: false
+  security:
+    oauth2:
+      client:
+        registration:
+          github:
+            client-id: 313f926fb7ff25bf5655
+            client-secret: b2cc859781895e16d33c847b3e7e64e7fab32324
+
+
+#yml配置方式 第三方平台默认支持github、google、OKta、facebook 这几个只需要配置client_id、secret即可
+#若使用其他平台,可在代码中配置或者这里
+#spring:
+#  security:
+#    oauth2:
+#      client:
+#        registration:
+#          qq:
+#            client-id: qq-client-id
+#            client-secret: qq-client-secret
+#        provider:
+#          qq:
+#            authorization-uri: https://your-subdomain.oktapreview.com/oauth2/v1/authorize
+#            token-uri: https://your-subdomain.oktapreview.com/oauth2/v1/token
+#            user-info-uri: https://your-subdomain.oktapreview.com/oauth2/v1/userinfo
+#            user-name-attribute: sub
+#            jwk-set-uri: https://your-subdomain.oktapreview.com/oauth2/v1/keys

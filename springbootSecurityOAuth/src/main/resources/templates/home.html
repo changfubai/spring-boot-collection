@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+<head>
+    <title>Security with Spring Boot</title>
+</head>
+<body>
+<h1>OAuth 2.0 Login with Spring Security</h1>
+<div>&nbsp;</div>
+<div>
+    <h1>这是所有人都可以访问的页面！home</h1>
+    需授权页面：
+    <a href="/userinfo" th:href="@{/userinfo}">Display User Info</a>
+    <br>
+    不用授权页面：
+    <a href="/" th:href="@{/}">index </a>
+
+</div>
+</body>
+</html>
