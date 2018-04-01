@@ -12,3 +12,8 @@
 ## [springbootSecurityOAuth](https://github.com/changfubai/spring-boot-collection/tree/master/springbootSecurityOAuth)
 
 整合了springsecurity与OAuth2.0，对于实现过程和方法，这里有完整的说明，[OAuth2.0--通过github学习整个流程](http://blog.changfubai.com/3990748316/)
+
+
+##[springbootDatabaseConnection](https://github.com/changfubai/spring-boot-collection/tree/master/springbootDatabaseConnection)
+
+实现了jdbctemplate、mybatis、jpa不同方式操作数据库的demo。具体说明查看我的博客[springboot数据库操作](http://blog.changfubai.com/54851005/)
